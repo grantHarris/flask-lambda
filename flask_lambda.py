@@ -38,6 +38,7 @@ __version__ = '0.0.4'
 
 
 def make_environ(event):
+    print(event)
     environ = {}
 
     if event['headers']:
