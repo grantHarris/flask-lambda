@@ -38,6 +38,7 @@ __version__ = '0.0.4'
 
 
 def make_environ(event):
+    environ = {}
     if event['headers']:
         for hdr_name, hdr_value in event['headers'].items():
             hdr_name = hdr_name.replace('-', '_').upper()
